@@ -1,0 +1,86 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2010 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[8pt,a4paper]{moderncv}
+
+% moderncv themes
+\moderncvtheme[blue, serif]{classic}                 % optional argument are 'blue' (default), 'orange', 'red', 'green', 'grey' and 'roman' (for roman fonts, instead of sans serif fonts)
+%\moderncvtheme[green]{classic}                % idem
+
+% character encoding
+\usepackage[utf8]{inputenc}                   % replace by the encoding you are using
+
+% adjust the page margins
+\usepackage[scale=0.8]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}						% if you want to change the width of the column with the dates
+%\AtBeginDocument{\setlength{\maketitlenamewidth}{6cm}}  % only for the classic theme, if you want to change the width of your name placeholder (to leave more space for your address details
+%\AtBeginDocument{\recomputelengths}                     % required when changes are made to page layout lengths
+
+% personal data
+\firstname{Nikica}
+\familyname{Jokić}
+\title{Curriculum Vitae}               % optional, remove the line if not wanted
+\address{Jurja Neidhardta 4}{10k, Zagreb}    % optional, remove the line if not wanted
+\mobile{+385955177803}                    % optional, remove the line if not wanted
+%\phone{phone (optional)}                      % optional, remove the line if not wanted
+%\fax{fax (optional)}                          % optional, remove the line if not wanted
+\email{neektza@gmail.com}                      % optional, remove the line if not wanted
+\homepage{http://marvin.kset.org/\textasciitilde neektza/}
+%\extrainfo{additional information (optional)} % optional, remove the line if not wanted
+\photo[64pt]{licna09.jpg}                         % '64pt' is the height the picture must be resized to and 'picture' is the name of the picture file; optional, remove the line if not wanted
+\quote{"Everyone is ignorant, only on different subjects." -- \small{Will Rogers}}                 % optional, remove the line if not wanted
+
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+\maketitle
+
+\section{Obrazovanje}
+\cventry{2000--2004}{Prva Sušačka Hrvatska Gimnazija}{Rijeka}{}{}{}
+\cventry{2004--2009} {Prvostupnik inženjer računarstva}{Fakultet elektrotehnike i računarstva}{Sveučilište u Zagrebu}{}{}
+\cventry{2009--2012(oč.)}{Magistar inženjer računarstva}{Fakultet elektrotehnike i računarstva}{Sveučilište u Zagrebu}{}{}
+
+\section{Vještine}
+\cvcomputer{Skriptiranje}{Ruby, Python, Bash} {Programiranje}{C, Java (J2SE)}
+\cvcomputer{OS}{GNU/Linux (Debian, Fedora, Arch)} {Servisi}{apache, bind, dhcpd \ldots}
+\cvcomputer{Baze podataka}{SQL / PostgreSQL, SQLite, Informix} {Markup}{HTML, XML, LaTeX}
+\cvcomputer{Mreže}{netfilter/iptables, pf, mikrotik} {Web}{Rails, Django, jQuery}
+\cvcomputer{Sigurnost}{nessus, nmap, \ldots}{}{}
+
+\section{Stručno iskustvo}
+\cventry{2010 \ldots}{Voditelj računarske sekcije}{KSET - Klub studenata elektrotehnike}{}{}{Organizacija projekata i edukacija članova sekcije koja se sastoji od tridesetak volontera s interesom u računarstvu. Sudjelovanje u organizaciji rada cjelokupnog kluba koji se sastoji od 300+ članova.}
+\cventry{2009 \ldots}{Recenzent sigurnosnog softvera}{LSS - Laboratorij za signale i sustave, FER}{}{}{Razvoj \textit{pluginova} za OpenVAS sigurnosni alat. Ispitivanje i recenziranje sigurnosnog softvera (Nagios, kismet, Truecrypt, DBAN \ldots)}
+\cventry{2008 \ldots}{Sistemski administrator}{KSET - Klub studenata elektrotehnike}{}{}{Održavanje mreže od tridesetak klijentskih i nekoliko poslužiteljskih računala (virtualiziranih pomoću \textit{lxc} tehnologije). Administracija mrežnih servisa (web, mail, DNS, \ldots) te poslužitelja baza podataka (PostgreSQL, MySQL).}
+\cventry{2007 \ldots}{Honarni developer}{}{}{}{Razvoj web aplikacija. Ruby on Rails i Django razvojne platforme.}
+
+\subsection{Ostalo}
+\cvline{OKOSL/NKOSL}{Pisanje materijala za dva izborna predmeta (vještine) na FERu - osnovno i napredno korištenje operacijskog sustava Linux.}
+\cvline{JobFair 2011}{Sudjelovanje u organizaciji i IT podrška.}
+\cvline{Linux InstallFest}{Organizacija i IT podrška.}
+
+\section{Jezici}
+\cvlanguage{Engleski}{\small Aktivno}{govor/pisanje C1, razumijevanje C2}
+
+\section{Profesionalni interesi}
+\cvline{*}{Open-source softver}
+\cvline{*}{Mrežna i računalna sigurnost}
+\cvline{*}{Moderni programski jezici (Ruby, Python \ldots)}
+
+\section{Osobni interesi i aktivnosti}
+\cvline{*}{\small Borilačke vještine - stariji učenik Karatea i Jujutsua }
+\cvline{*}{\small Avanturistički biciklizam - vožnja na duge staze}
+\cvline{*}{\small Svirka - gitara, klavijature}
+
+\section{Ostalo}
+\cvline{*}{Vozačka dozvola B kategorije}
+
+\end{document}
+
+
+%% end of file `template_en.tex'.

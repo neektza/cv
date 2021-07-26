@@ -1,0 +1,91 @@
+\documentclass[8pt,a4paper]{moderncv}
+
+% moderncv themes
+\moderncvtheme[blue, serif]{classic}                 % optional argument are 'blue' (default), 'orange', 'red', 'green', 'grey' and 'roman' (for roman fonts, instead of sans serif fonts)
+%\moderncvtheme[green]{cla\begin{tiny}\label{•} \end{tiny}ssic}                % idem
+
+% character encoding
+\usepackage[utf8]{inputenc}                   % replace by the encoding you are using
+%\usepackage{hyperref}
+
+% adjust the page margins
+\usepackage[scale=0.8]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}						% if you want to change the width of the column with the dates
+%\AtBeginDocument{\setlength{\maketitlenamewidth}{6cm}}  % only for the classic theme, if you want to change the width of your name placeholder (to leave more space for your address details
+%\AtBeginDocument{\recomputelengths}                     % required when changes are made to page layout lengths
+
+% personal data
+\firstname{Nikica}
+\familyname{Jokić}
+\title{Curriculum Vitae}               % optional, remove the line if not wanted
+\address{Jurja Neidhardta 4}{Zagreb}    % optional, remove the line if not wanted
+\mobile{+385955177803}                    % optional, remove the line if not wanted
+%\phone{phone (optional)}                      % optional, remove the line if not wanted
+%\fax{fax (optional)}                          % optional, remove the line if not wanted
+\email{neektza@gmail.com}                      % optional, remove the line if not wanted
+%\homepage{homepage (optional)}                % optional, remove the line if not wanted
+%\extrainfo{additional information (optional)} % optional, remove the line if not wanted
+%\photo[64pt]{profile_64.png}                         % '64pt' is the height the picture must be resized to and 'picture' is the name of the picture file; optional, remove the line if not wanted
+%\quote{"Never miss a good chance to shut up." -- \small{Will Rogres}}                 % optional, remove the line if not wanted
+
+% to show numerical labels in the bibliography; only useful if you make citations in your resume
+\makeatletter
+\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+\makeatother
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+
+%\nopagenumbers{}                             % uncomment to suppress automatic page numbering for CVs longer than one page
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+\maketitle
+
+\section{Education}
+\cventry{2004--2009}{Bachelor of Science in Computing}{Faculty of Electrical Engineering and Computing}{University of Zagreb}{}{}
+\cventry{2010--2012}{Master of Science in Computing}{Faculty of Electrical Engineering and Computing}{University of Zagreb}{}{}
+
+\section{Master thesis}
+\cvitem{title}{\emph{Multi-zone firewall with redundancy and automatic reconfiguration}}
+\cvitem{supervisors}{Branko Jeren, Ph. D.}
+\cvitem{description}{Building a multi-WAN, multi-LAN firewall consisting of multiple redundant nodes and capable of automatically adding new rules depending on network traffic}
+
+\section{Skills}
+\cvline{Front-end} {HTML5, CSS3, jQuery, Backbone.js, Knockout}
+\cvline{Back-end} {Ruby on Rails, Sinatra, EventMachine}
+\cvline{Languages} {Ruby, Javascript, C, Java, Bash}
+\cvline{OS} {GNU/Linux (Debian, CentOS), FreeBSD}
+\cvline{Databases} {SQL, xQuery | PostgreSQL, PostGIS, MySQL}
+\cvline{Networks} {netfilter/iptables, pf, ldap, dhcp, bind}
+\cvline{Services} {apache, nginx, postfix, memcached, supervisord, lxc}
+
+\section{Experience}
+\subsection{Vocational}
+\cventry{2011 \ldots}{Web developer / Sysadmin}{Infinum Ltd}{}{}{Developing web applications - back-end (mostly Ruby on Rails) and front-end (HTML5/CSS3, jQuery, Backbone/Knockout, including server setup and deployment}
+\cventry{2010 -- 2011}{Computing division leader}{KSET}{}{}{Leading a volunteer students group (project and membership management)}
+\cventry{2010 -- 2011}{Security software tester/developer}{LSS - Laboratory for Systems and Signals}{}{}{Security software testing and \href{http://www.cis.hr}{reviewing}, and NVT scripting (OpenVAS)}
+\cventry{2008 -- 2010}{System admininistrator}{KSET}{}{}{Building/maintaining a network infrastructure, setting up network services services (web, mail, dns \ldots) and DB administration}
+\cventry{2007 -- 2009}{Occasional freelance web developer}{}{}{}{Developing web apps, mostly in Ruby on Rails + HTML/CSS}
+
+\subsection{Other}
+\cvline{OKOSL/NKOSL}{Lecturer and learning resources author for basic and advanced Linux classes at Univ. of Zagreb}
+\cvline{Zagreb JobFair 2011}{Organization and IT support}
+\cvline{Linux InstallFest (2010, 2011, 2012)}{Organization and support}
+
+\section{Languages}
+\cvlanguage{Croatian}{\small Native}{}
+\cvlanguage{English}{\small Active}{Speech/Writing C1, Understanding C2}
+
+\section{Professional Interests}
+\cvline{Open-source movement}{Community events, promotion and participation}
+\cvline{Software development}{Language design, programming paradigms, system design}
+\cvline{System administration}{Provisioning, scalability}
+
+\section{Personal Interests and Hobbies}
+\cvline{Martial arts}{\small Jujutsu, Aikido}
+\cvline{Cycling}{\small Long distance / touring}
+
+\end{document}
